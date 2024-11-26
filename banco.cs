@@ -54,6 +54,9 @@ namespace _231479_231464
 
                 Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Cidades + "+"(id integer auto_increment primary key, " + "nome char(40)," + "uf char(02))", Conexao);
                 Comando.ExecuteNonQuery();
+                Comando = new MySqlCommand("CREATE TABLE IF NOT EXISTS Marcas "  +"(id integer auto_increment primary key," + "marca char(20))", Conexao);
+                Comando.ExecuteNonQuery();
+
 
                 FecharConexao();
             }
